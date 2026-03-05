@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyFetch - Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌤️ SkyFetch Weather Dashboard</h1>
+            <p class="subtitle">Real-time weather information powered by OpenWeatherMap</p>
+        </header>
+
+        <div class="search-section">
+            <input type="text" id="cityInput" placeholder="Enter city name..." class="city-input">
+            <button id="searchBtn" class="search-btn">Search</button>
+        </div>
+
+        <div id="weatherContainer" class="weather-container">
+            <div class="weather-card loading">
+                <p>Loading weather data...</p>
+            </div>
+        </div>
+
+        <div id="errorContainer" class="error-container"></div>
+
+        <footer>
+            <p>&copy; 2026 SkyFetch Weather Dashboard | Data from OpenWeatherMap API</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
